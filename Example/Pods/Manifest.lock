@@ -1,0 +1,16 @@
+PODS:
+  - BrandButton (0.1.0)
+
+DEPENDENCIES:
+  - BrandButton (from `../`)
+
+EXTERNAL SOURCES:
+  BrandButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BrandButton: bb483c511050c884f30604abd53a4e8e4c16e899
+
+PODFILE CHECKSUM: f8148c811c96331bacbc82170b961083a44ed720
+
+COCOAPODS: 1.15.2
