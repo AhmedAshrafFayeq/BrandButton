@@ -2,15 +2,15 @@ PODS:
   - BrandButton (0.1.0)
 
 DEPENDENCIES:
-  - BrandButton (from `../`)
+  - BrandButton (from `/Users/ahmedfayek/Desktop/Me/Projects/BrandButton/BrandButton`)
 
 EXTERNAL SOURCES:
   BrandButton:
-    :path: "../"
+    :path: "/Users/ahmedfayek/Desktop/Me/Projects/BrandButton/BrandButton"
 
 SPEC CHECKSUMS:
-  BrandButton: bb483c511050c884f30604abd53a4e8e4c16e899
+  BrandButton: 61c05449204749080fe3791ffa5353f6f1f6d509
 
-PODFILE CHECKSUM: f8148c811c96331bacbc82170b961083a44ed720
+PODFILE CHECKSUM: bc1900988dfa30c396bd752a1c702baf6659d2c3
 
 COCOAPODS: 1.15.2

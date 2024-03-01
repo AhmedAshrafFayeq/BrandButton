@@ -1,9 +1,9 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'BrandButton_Example' do
-  pod 'BrandButton', :path => '../'
+  pod 'BrandButton', :path => '/Users/ahmedfayek/Desktop/Me/Projects/BrandButton/BrandButton'
 
   target 'BrandButton_Tests' do
     inherit! :search_paths

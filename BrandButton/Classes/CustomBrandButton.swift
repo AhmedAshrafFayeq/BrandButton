@@ -7,11 +7,13 @@
 
 import UIKit
 
-@IBDesignable class CustomBrandButton: UIView {
+@IBDesignable public class CustomBrandButton: UIView {
     // MARK: - IBOutlets
     @IBOutlet var containerView: UIView!
+    @IBOutlet weak var leadingIconContainer: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var leadingIconImageView: UIImageView!
+    @IBOutlet weak var trailingIconContainer: UIView!
     @IBOutlet weak var trailingIconImageView: UIImageView!
     
     // MARK: - Variables
@@ -41,30 +43,30 @@ import UIKit
     
     
     // Image for leading icon
-    var leadingIcon: UIImage? {
+    public var leadingIcon: UIImage? {
         didSet {
-            leadingIconImageView.isHidden = false
+            leadingIconContainer.isHidden = false
             leadingIconImageView.image = leadingIcon
-            trailingIconImageView.isHidden = true
+            trailingIconContainer.isHidden = true
         }
     }
     // Image for trailing icon
-    var trailingIcon: UIImage? {
+    public var trailingIcon: UIImage? {
         didSet {
-            trailingIconImageView.isHidden = false
+            trailingIconContainer.isHidden = false
             trailingIconImageView.image = trailingIcon
-            leadingIconImageView.isHidden = true
+            leadingIconContainer.isHidden = true
         }
     }
     
-    var isPressed: Bool? {
+    public var isPressed: Bool? {
         didSet {
             buttonState = isPressed ?? false ? .pressed : .normal
             configure()
         }
     }
     
-    var fontSize: Int? {
+    public var fontSize: Int? {
         didSet {
             titleLabel.font = titleLabel.font.withSize(CGFloat(fontSize ?? 15))
             configure()
@@ -83,7 +85,9 @@ import UIKit
     }
     
     private func commonInit() {
-        Bundle.main.loadNibNamed("CustomBrandButton", owner: self)
+        let bundle = Bundle(for: self.classForCoder)
+        let nib = UINib(nibName: "CustomBrandButton", bundle: bundle)
+        nib.instantiate(withOwner: self, options: nil)
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -92,7 +96,7 @@ import UIKit
     public func configure(title: String, type: BrandButtonType){
         titleLabel.text = title
         buttonType = type
-        
+        configure()
     }
     
     private func configure() {
