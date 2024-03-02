@@ -28,75 +28,63 @@
             <rect key="frame" x="0.0" y="0.0" width="428" height="125"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rb5-WP-IY4">
-                    <rect key="frame" x="0.0" y="0.0" width="428" height="125"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="WRx-mJ-Vxd">
+                    <rect key="frame" x="20" y="0.0" width="388" height="125"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="WRx-mJ-Vxd">
-                            <rect key="frame" x="20" y="0.0" width="388" height="125"/>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu7-pH-EwB">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="125"/>
                             <subviews>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu7-pH-EwB">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="125"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mGa-ll-mUo">
-                                            <rect key="frame" x="-5" y="50.666666666666664" width="24" height="23.999999999999993"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="24" id="f8Q-8k-goq"/>
-                                                <constraint firstAttribute="width" constant="24" id="tFU-45-Ed4"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mGa-ll-mUo">
+                                    <rect key="frame" x="-5" y="50.666666666666664" width="24" height="23.999999999999993"/>
                                     <constraints>
-                                        <constraint firstItem="mGa-ll-mUo" firstAttribute="centerY" secondItem="vu7-pH-EwB" secondAttribute="centerY" id="KGA-Df-dvK"/>
-                                        <constraint firstItem="mGa-ll-mUo" firstAttribute="leading" secondItem="vu7-pH-EwB" secondAttribute="leading" constant="-5" id="v58-bn-e8q"/>
+                                        <constraint firstAttribute="height" constant="24" id="f8Q-8k-goq"/>
+                                        <constraint firstAttribute="width" constant="24" id="tFU-45-Ed4"/>
                                     </constraints>
-                                </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-I9-dTP">
-                                    <rect key="frame" x="0.0" y="0.0" width="388" height="125"/>
-                                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJO-RV-jvI">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="125"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSb-O8-PpC">
-                                            <rect key="frame" x="-19" y="50.666666666666664" width="24" height="23.999999999999993"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="24" id="MzZ-06-3Wb"/>
-                                                <constraint firstAttribute="height" constant="24" id="XXo-pf-id9"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="vSb-O8-PpC" secondAttribute="trailing" constant="-5" id="I2x-4M-BDY"/>
-                                        <constraint firstItem="vSb-O8-PpC" firstAttribute="centerY" secondItem="eJO-RV-jvI" secondAttribute="centerY" id="Lcv-3z-UTQ"/>
-                                    </constraints>
-                                </view>
+                                </imageView>
                             </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="eJO-RV-jvI" firstAttribute="width" relation="lessThanOrEqual" secondItem="WRx-mJ-Vxd" secondAttribute="width" multiplier="0.33" id="1cC-SO-pBT"/>
-                                <constraint firstItem="vu7-pH-EwB" firstAttribute="width" relation="lessThanOrEqual" secondItem="WRx-mJ-Vxd" secondAttribute="width" multiplier="0.33" id="UGf-tC-sbn"/>
+                                <constraint firstItem="mGa-ll-mUo" firstAttribute="centerY" secondItem="vu7-pH-EwB" secondAttribute="centerY" id="KGA-Df-dvK"/>
+                                <constraint firstItem="mGa-ll-mUo" firstAttribute="leading" secondItem="vu7-pH-EwB" secondAttribute="leading" constant="-5" id="v58-bn-e8q"/>
                             </constraints>
-                        </stackView>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-I9-dTP">
+                            <rect key="frame" x="0.0" y="0.0" width="388" height="125"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJO-RV-jvI">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="125"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSb-O8-PpC">
+                                    <rect key="frame" x="-19" y="50.666666666666664" width="24" height="23.999999999999993"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="MzZ-06-3Wb"/>
+                                        <constraint firstAttribute="height" constant="24" id="XXo-pf-id9"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="vSb-O8-PpC" secondAttribute="trailing" constant="-5" id="I2x-4M-BDY"/>
+                                <constraint firstItem="vSb-O8-PpC" firstAttribute="centerY" secondItem="eJO-RV-jvI" secondAttribute="centerY" id="Lcv-3z-UTQ"/>
+                            </constraints>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="WRx-mJ-Vxd" firstAttribute="leading" secondItem="rb5-WP-IY4" secondAttribute="leading" constant="20" id="KRT-el-vkm"/>
-                        <constraint firstAttribute="bottom" secondItem="WRx-mJ-Vxd" secondAttribute="bottom" id="O1A-iM-ZHT"/>
-                        <constraint firstAttribute="trailing" secondItem="WRx-mJ-Vxd" secondAttribute="trailing" constant="20" id="i7i-27-Ta7"/>
-                        <constraint firstItem="WRx-mJ-Vxd" firstAttribute="top" secondItem="rb5-WP-IY4" secondAttribute="top" id="i8e-Pp-WuA"/>
+                        <constraint firstItem="eJO-RV-jvI" firstAttribute="width" relation="lessThanOrEqual" secondItem="WRx-mJ-Vxd" secondAttribute="width" multiplier="0.33" id="1cC-SO-pBT"/>
+                        <constraint firstItem="vu7-pH-EwB" firstAttribute="width" relation="lessThanOrEqual" secondItem="WRx-mJ-Vxd" secondAttribute="width" multiplier="0.33" id="UGf-tC-sbn"/>
                     </constraints>
-                </view>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="rb5-WP-IY4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Zh-Sc-gsH"/>
-                <constraint firstItem="rb5-WP-IY4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TL2-7r-4rZ"/>
-                <constraint firstItem="rb5-WP-IY4" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="eZJ-nG-EcE"/>
-                <constraint firstAttribute="trailing" secondItem="rb5-WP-IY4" secondAttribute="trailing" id="wHf-8G-bud"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WRx-mJ-Vxd" secondAttribute="trailing" constant="20" id="GM3-XD-nfd"/>
+                <constraint firstAttribute="bottom" secondItem="WRx-mJ-Vxd" secondAttribute="bottom" id="IdG-dd-uph"/>
+                <constraint firstItem="WRx-mJ-Vxd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Qf0-32-pKT"/>
+                <constraint firstItem="WRx-mJ-Vxd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zl3-e0-clK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
