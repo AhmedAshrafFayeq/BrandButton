@@ -7,7 +7,8 @@
 
 import UIKit
 
-@IBDesignable public class CustomBrandButton: UIView {
+@IBDesignable public class CustomBrandButton: UIControl {
+    
     // MARK: - IBOutlets
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var leadingIconContainer: UIView!
@@ -17,32 +18,19 @@ import UIKit
     @IBOutlet weak var trailingIconImageView: UIImageView!
     
     // MARK: - Variables
-//    @IBInspectable var bgColor: UIColor? {
-//        set { containerView.backgroundColor = newValue }
-//        get { return containerView.backgroundColor }
-//    }
-//    @IBInspectable var title: String? {
-//        set { titleLabel.text = newValue }
-//        get { return titleLabel.text }
-//    }
-//
-//    @IBInspectable var labelFontSize: Int = 15 {
-//        didSet {
-//            lblFontSize = labelFontSize
-//            configureView()
-//        }
-//    }
     
-    var buttonType: BrandButtonType = .primaryGreen
-    var buttonState: BrandButtonState = .normal
-    var buttonIconStyle: BrandButtonIcon = .default
-    var lblFontSize: Int = 15
-    var buttonBgColor: UIColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
-    var labelColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    public override var isHighlighted: Bool {
+        didSet {
+            configure()
+        }
+    }
     
-    
-    
-    // Image for leading icon
+    public override var isEnabled: Bool {
+        didSet {
+            configure()
+        }
+    }
+
     public var leadingIcon: UIImage? {
         didSet {
             leadingIconContainer.isHidden = false
@@ -50,7 +38,7 @@ import UIKit
             trailingIconContainer.isHidden = true
         }
     }
-    // Image for trailing icon
+
     public var trailingIcon: UIImage? {
         didSet {
             trailingIconContainer.isHidden = false
@@ -59,17 +47,27 @@ import UIKit
         }
     }
     
-    public var isPressed: Bool? {
+    public var buttonType: ButtonType = .primary {
         didSet {
-            buttonState = isPressed ?? false ? .pressed : .normal
             configure()
         }
     }
     
-    public var fontSize: Int? {
+    public var buttonColor: ButtonColor = .green {
         didSet {
-            titleLabel.font = titleLabel.font.withSize(CGFloat(fontSize ?? 15))
             configure()
+        }
+    }
+    
+    public var buttonIconStyle: ButtonIconStyle = .none {
+        didSet {
+            configureIconStyle()
+        }
+    }
+    
+    public var font: UIFont? {
+        didSet {
+            titleLabel.font = font
         }
     }
     
@@ -91,55 +89,98 @@ import UIKit
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        containerView.isUserInteractionEnabled = false
     }
     
-    public func configure(title: String, type: BrandButtonType){
+    public func configure(title: String, type: ButtonType) {
         titleLabel.text = title
         buttonType = type
         configure()
     }
     
+    
     private func configure() {
-
         switch buttonType {
-        case .primaryGreen:
-            titleLabel.textColor = .white
-            containerView.backgroundColor = buttonState == .normal ? #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1) : #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
-            
-        case .primaryBlue:
-            titleLabel.textColor = .white
-            containerView.backgroundColor = buttonState == .normal ? #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) : #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
-         case .primaryDisable:
-            break
-            
-        case .secondaryGreen, .secondaryBlue, .secondaryDisable:
-            break
+        case .primary:
+            switch buttonColor {
+            case .green:
+                configurePrimaryGreenStyle()
+            case .blue:
+                configurePrimaryBlueStyle()
+            }
+        case .secondary:
+            switch buttonColor {
+            case .green:
+                configureSecondaryGreenStyle()
+            case .blue:
+                configureSecondaryBlueStyle()
+            }
         }
     }
+
     
+    private func configurePrimaryGreenStyle() {
+        titleLabel.textColor = .white
+        containerView.backgroundColor = isEnabled ? isHighlighted ? .darkGreenColor() : .lightGreenColor() : .primaryDisabled()
+    }
+    
+    private func configurePrimaryBlueStyle() {
+        titleLabel.textColor = .white
+        containerView.backgroundColor = isEnabled ? isHighlighted ?  .darkBlueColor() : .lightBlueColor() : .primaryDisabled()
+    }
+    
+    private func configureSecondaryGreenStyle() {
+        titleLabel.textColor = isEnabled ? isHighlighted ? .lightGreenColor() : .darkGreenColor() : .primaryDisabled()
+        containerView.backgroundColor = isHighlighted ? .secondaryGreenPressed() : .white
+        setBorder(color: isEnabled ? isHighlighted ? .darkGreenColor() : .lightGreenColor() : .primaryDisabled())
+    }
+    
+    private func configureSecondaryBlueStyle() {
+        titleLabel.textColor = isEnabled ? isHighlighted ? .darkBlueColor() : .lightBlueColor() : .primaryDisabled()
+        containerView.backgroundColor = isHighlighted ? .secondaryBluePressed() : .white
+        setBorder(color: isEnabled ? isHighlighted ? .darkBlueColor() : .lightBlueColor() : .primaryDisabled())
+
+    }
+    
+    private func setBorder(color: UIColor) {
+        containerView.layer.borderWidth = 1.0
+        containerView.layer.borderColor = color.cgColor
+    }
+    
+    private func configureIconStyle() {
+        switch buttonIconStyle {
+        case .none:
+            leadingIconContainer.isHidden = true
+            trailingIconContainer.isHidden = true
+        case .leading:
+            leadingIconContainer.isHidden = false
+            leadingIconImageView.image = trailingIconImageView.image
+            trailingIconContainer.isHidden = true
+        case .trailing:
+            trailingIconContainer.isHidden = false
+            trailingIconImageView.image = leadingIconImageView.image
+            leadingIconContainer.isHidden = true
+        }
+    }
 }
 
 
+extension CustomBrandButton {
+    
+    public enum ButtonType {
+        case primary
+        case secondary
+    }
+    
+    public enum ButtonColor{
+        case green
+        case blue
+    }
 
-public enum BrandButtonType: Int {
-    //primary
-    case primaryGreen = 1
-    case primaryBlue
-    case primaryDisable
-    //secondary
-    case secondaryGreen
-    case secondaryBlue
-    case secondaryDisable
-}
-
-
-public enum BrandButtonState: Int {
-    case normal = 0
-    case pressed
-}
-
-public enum BrandButtonIcon: Int {
-    case `default` = 0
-    case leading
-    case trailing
+    
+    public enum ButtonIconStyle {
+        case none
+        case leading
+        case trailing
+    }
 }

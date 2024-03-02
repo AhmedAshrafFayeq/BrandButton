@@ -10,30 +10,47 @@ import UIKit
 import BrandButton
 
 class ViewController: UIViewController {
-    @IBOutlet weak var brandButton: CustomBrandButton!
     
+    @IBOutlet weak var brandButton: CustomBrandButton!
+    @IBOutlet weak var blueBrandButton: CustomBrandButton!
+    @IBOutlet weak var secondaryGreenButton: CustomBrandButton!
+    @IBOutlet weak var secondaryBlueButton: CustomBrandButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        brandButton.configure(title: "Primary Default", type: .primaryBlue)
-        brandButton.fontSize = 16
-        if #available(iOS 13.0, *) {
-            let homeSymbolConfiguration = UIImage.SymbolConfiguration(pointSize: 55, weight: .black)
-            
-            brandButton.trailingIcon = UIImage(systemName: "house", withConfiguration: homeSymbolConfiguration)
-            brandButton.leadingIcon = UIImage(systemName: "house", withConfiguration: homeSymbolConfiguration)
-        }
+        
+        brandButton.configure(title: "Primary", type: .primary)
+        brandButton.buttonColor = .green
+        brandButton.addTarget(self, action: #selector(didTapBrandButton), for: .touchUpInside)
+        brandButton.leadingIcon = UIImage(named: "swift")
+        brandButton.font = UIFont(name: "Helvetica-Bold", size: 20)
+        
+        blueBrandButton.configure(title: "Primary Blue", type: .primary)
+        blueBrandButton.buttonColor = .blue
+        blueBrandButton.isEnabled = false
+        blueBrandButton.trailingIcon = UIImage(named: "swift")
+        
+        secondaryGreenButton.configure(title: "Secondary", type: .secondary)
+        secondaryGreenButton.buttonColor = .green
+        secondaryGreenButton.leadingIcon = UIImage(named: "swift-2")
+        secondaryGreenButton.addTarget(self, action: #selector(didTapsecondaryGreenButton), for: .touchUpInside)
+        
+        secondaryBlueButton.configure(title: "Secondary Blue", type: .secondary)
+        secondaryBlueButton.buttonColor = .blue
+        secondaryBlueButton.isEnabled = false
+        secondaryBlueButton.leadingIcon = UIImage(named: "swift-2")
+        
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @objc func didTapBrandButton() {
+        print("did Tap Brand button")
+        blueBrandButton.isEnabled = true
+        blueBrandButton.buttonIconStyle = .trailing
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    @objc func didTapsecondaryGreenButton() {
+        print("did Tap Brand button")
+        secondaryBlueButton.isEnabled = true
 
+    }
 }
-

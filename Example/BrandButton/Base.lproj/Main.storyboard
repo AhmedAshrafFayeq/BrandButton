@@ -27,16 +27,49 @@
                                     <constraint firstAttribute="height" constant="44" id="s3x-MT-jaV"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ty-I5-25F" customClass="CustomBrandButton" customModule="BrandButton">
+                                <rect key="frame" x="76" y="159" width="223" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ts5-82-6ro"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tg-mU-HdG" customClass="CustomBrandButton" customModule="BrandButton">
+                                <rect key="frame" x="76" y="287" width="223" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SMo-xK-ZSo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-z3-2nG" customClass="CustomBrandButton" customModule="BrandButton">
+                                <rect key="frame" x="76" y="223" width="223" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fUR-1d-kCe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4ty-I5-25F" firstAttribute="top" secondItem="kUu-ea-PJ3" secondAttribute="bottom" constant="20" id="2TP-9Z-Grm"/>
+                            <constraint firstItem="1tg-mU-HdG" firstAttribute="leading" secondItem="TDP-z3-2nG" secondAttribute="leading" id="3g8-Si-lvd"/>
+                            <constraint firstItem="TDP-z3-2nG" firstAttribute="top" secondItem="4ty-I5-25F" secondAttribute="bottom" constant="20" id="5ln-Qi-GiX"/>
+                            <constraint firstItem="1tg-mU-HdG" firstAttribute="trailing" secondItem="TDP-z3-2nG" secondAttribute="trailing" id="8ON-Fz-Kn3"/>
                             <constraint firstItem="kUu-ea-PJ3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="75" id="Bkx-8c-fBu"/>
+                            <constraint firstItem="TDP-z3-2nG" firstAttribute="leading" secondItem="4ty-I5-25F" secondAttribute="leading" id="CEx-BK-RRn"/>
+                            <constraint firstItem="4ty-I5-25F" firstAttribute="leading" secondItem="kUu-ea-PJ3" secondAttribute="leading" id="GCK-S3-Rua"/>
+                            <constraint firstItem="TDP-z3-2nG" firstAttribute="trailing" secondItem="4ty-I5-25F" secondAttribute="trailing" id="Kgg-fC-dlw"/>
+                            <constraint firstItem="1tg-mU-HdG" firstAttribute="top" secondItem="TDP-z3-2nG" secondAttribute="bottom" constant="20" id="Rmf-cW-GXw"/>
+                            <constraint firstItem="4ty-I5-25F" firstAttribute="trailing" secondItem="kUu-ea-PJ3" secondAttribute="trailing" id="b2w-5S-qaL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kUu-ea-PJ3" secondAttribute="trailing" constant="60" id="itZ-Pc-3EA"/>
                             <constraint firstItem="kUu-ea-PJ3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="60" id="wd4-pM-AUi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueBrandButton" destination="4ty-I5-25F" id="Hvm-eq-1b0"/>
                         <outlet property="brandButton" destination="kUu-ea-PJ3" id="rgv-81-qm3"/>
+                        <outlet property="secondaryBlueButton" destination="1tg-mU-HdG" id="gzZ-bZ-Typ"/>
+                        <outlet property="secondaryGreenButton" destination="TDP-z3-2nG" id="rAv-x2-lBL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "BrandButton/Classes/**/*"
+  "source_files": "BrandButton/Classes/**/*",
+  "resource_bundles": {
+    "BrandButton": [
+      "BrandButton/Assets/*.colorSet"
+    ]
+  }
 }
