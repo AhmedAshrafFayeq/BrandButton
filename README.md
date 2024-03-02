@@ -13,6 +13,8 @@ Welcome to the BrandButton documentation!
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Getting Started](#getting-started)
+- [Example](#example)
+- [Author](#author)
 - [License](#license)
 
 ## Introduction
