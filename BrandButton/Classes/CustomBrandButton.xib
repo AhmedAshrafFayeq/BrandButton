@@ -91,7 +91,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="rb5-WP-IY4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Zh-Sc-gsH"/>
                 <constraint firstItem="rb5-WP-IY4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TL2-7r-4rZ"/>

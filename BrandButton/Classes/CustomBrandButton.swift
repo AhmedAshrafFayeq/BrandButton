@@ -29,22 +29,6 @@ import UIKit
             configure()
         }
     }
-
-    public var leadingIcon: UIImage? {
-        didSet {
-            leadingIconContainer.isHidden = false
-            leadingIconImageView.image = leadingIcon
-            trailingIconContainer.isHidden = true
-        }
-    }
-
-    public var trailingIcon: UIImage? {
-        didSet {
-            trailingIconContainer.isHidden = false
-            trailingIconImageView.image = trailingIcon
-            leadingIconContainer.isHidden = true
-        }
-    }
     
     public var buttonType: ButtonType = .primary {
         didSet {
@@ -76,21 +60,44 @@ import UIKit
         }
     }
     
+    public var leadingIcon: UIImage? {
+        didSet {
+            leadingIconContainer.isHidden  = false
+            leadingIconImageView.image     = leadingIcon
+            trailingIconContainer.isHidden = true
+        }
+    }
+
+    public var trailingIcon: UIImage? {
+        didSet {
+            trailingIconContainer.isHidden = false
+            trailingIconImageView.image    = trailingIcon
+            leadingIconContainer.isHidden  = true
+        }
+    }
+    
     // MARK: - UIView Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        commonInit()
+        setupUI()
     }
     
-    private func commonInit() {
-        let bundle = Bundle(for: self.classForCoder)
-        let nib = UINib(nibName: "CustomBrandButton", bundle: bundle)
-        nib.instantiate(withOwner: self, options: nil)
+    private func setupUI() {
+        loadNib()
+        setupContainerView()
+    }
+    
+    private func loadNib() {
+        let bundle = Bundle(for: type(of: self))
+        bundle.loadNibNamed(String(describing: CustomBrandButton.self), owner: self, options: nil)
+    }
+    
+    private func setupContainerView() {
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -98,8 +105,8 @@ import UIKit
     }
     
     // MARK: - UIView Configurations
-    public func configure(title: String, type: ButtonType) {
-        titleLabel.text = title
+    public func configure(title: String? = "", type: ButtonType) {
+        titleLabel.text = title == "" ? self.title : title
         buttonType = type
         configure()
     }
@@ -154,17 +161,31 @@ import UIKit
     private func configureIconStyle() {
         switch buttonIconStyle {
         case .none:
-            leadingIconContainer.isHidden = true
-            trailingIconContainer.isHidden = true
+            setupNoneStyleForView()
         case .leading:
-            leadingIconContainer.isHidden = false
-            leadingIconImageView.image = trailingIconImageView.image != nil ? trailingIconImageView.image : leadingIconImageView.image
-            trailingIconContainer.isHidden = true
+            setupLeadingStyleForView()
         case .trailing:
-            trailingIconContainer.isHidden = false
-            trailingIconImageView.image = leadingIconImageView.image != nil ? leadingIconImageView.image : trailingIconImageView.image
-            leadingIconContainer.isHidden = true
+            setupTrailingStyleForView()
         }
+    }
+    
+    private func setupNoneStyleForView() {
+        leadingIconContainer.isHidden  = true
+        trailingIconContainer.isHidden = true
+    }
+    
+    private func setupLeadingStyleForView() {
+        leadingIconContainer.isHidden = false
+        // Move trailingIcon to leadingImageView if exists
+        leadingIconImageView.image = trailingIconImageView.image != nil ? trailingIconImageView.image : leadingIconImageView.image
+        trailingIconContainer.isHidden = true
+    }
+    
+    private func setupTrailingStyleForView() {
+        trailingIconContainer.isHidden = false
+        // Move leadingIcon to trailingImageView if exists
+        trailingIconImageView.image = leadingIconImageView.image != nil ? leadingIconImageView.image : trailingIconImageView.image
+        leadingIconContainer.isHidden = true
     }
 }
 
@@ -180,7 +201,6 @@ extension CustomBrandButton {
         case green
         case blue
     }
-
     
     public enum ButtonIconStyle {
         case none

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        brandButton.configure(title: "Primary", type: .primary)
+        brandButton.configure(type: .primary)
         brandButton.buttonColor = .green
         brandButton.addTarget(self, action: #selector(didTapBrandButton), for: .touchUpInside)
         brandButton.leadingIcon = UIImage(named: "swift")
