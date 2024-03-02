@@ -103,7 +103,7 @@ To use BrandButton in your project, follow these steps:
       font: The font used for the button's title.
       
     Methods:
-      configure(title:type:): Configures the button with a specific title and type.
+      configure(title:type:color:): Configures the button with a specific title, type and color.
       configureIconStyle(): Configures the button's icon style (none, leading, or trailing).
 
 ## Example
