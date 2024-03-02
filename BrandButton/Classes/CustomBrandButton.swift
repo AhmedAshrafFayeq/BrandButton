@@ -18,7 +18,6 @@ import UIKit
     @IBOutlet weak var trailingIconImageView: UIImageView!
     
     // MARK: - Variables
-    
     public override var isHighlighted: Bool {
         didSet {
             configure()
@@ -70,8 +69,14 @@ import UIKit
             titleLabel.font = font
         }
     }
+
+    @IBInspectable var title: String? {
+        didSet {
+            titleLabel.text = title
+        }
+    }
     
-    // MARK: UIView Initialization
+    // MARK: - UIView Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -92,12 +97,12 @@ import UIKit
         containerView.isUserInteractionEnabled = false
     }
     
+    // MARK: - UIView Configurations
     public func configure(title: String, type: ButtonType) {
         titleLabel.text = title
         buttonType = type
         configure()
     }
-    
     
     private func configure() {
         switch buttonType {
@@ -117,7 +122,6 @@ import UIKit
             }
         }
     }
-
     
     private func configurePrimaryGreenStyle() {
         titleLabel.textColor = .white
@@ -154,11 +158,11 @@ import UIKit
             trailingIconContainer.isHidden = true
         case .leading:
             leadingIconContainer.isHidden = false
-            leadingIconImageView.image = trailingIconImageView.image
+            leadingIconImageView.image = trailingIconImageView.image != nil ? trailingIconImageView.image : leadingIconImageView.image
             trailingIconContainer.isHidden = true
         case .trailing:
             trailingIconContainer.isHidden = false
-            trailingIconImageView.image = leadingIconImageView.image
+            trailingIconImageView.image = leadingIconImageView.image != nil ? leadingIconImageView.image : trailingIconImageView.image
             leadingIconContainer.isHidden = true
         }
     }

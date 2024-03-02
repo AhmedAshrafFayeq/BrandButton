@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         brandButton.buttonColor = .green
         brandButton.addTarget(self, action: #selector(didTapBrandButton), for: .touchUpInside)
         brandButton.leadingIcon = UIImage(named: "swift")
-        brandButton.font = UIFont(name: "Helvetica-Bold", size: 20)
+        brandButton.font = UIFont(name: "Helvetica-Bold", size: 15)
         
         blueBrandButton.configure(title: "Primary Blue", type: .primary)
         blueBrandButton.buttonColor = .blue
@@ -45,11 +45,13 @@ class ViewController: UIViewController {
     @objc func didTapBrandButton() {
         print("did Tap Brand button")
         blueBrandButton.isEnabled = true
-        blueBrandButton.buttonIconStyle = .trailing
+        brandButton.buttonIconStyle = .leading
 
     }
+    
     @objc func didTapsecondaryGreenButton() {
         print("did Tap Brand button")
+        brandButton.buttonIconStyle = .trailing
         secondaryBlueButton.isEnabled = true
 
     }
