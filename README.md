@@ -111,8 +111,9 @@ To use BrandButton in your project, follow these steps:
 
    ```swift
    import BrandButton
-
+   ```
    2. Ceate an instance of CustomBrandButtonRepresentable and customize its properties as needed:
+
     ```
     CustomBrandButtonRepresentable(
                 title: "Title",
