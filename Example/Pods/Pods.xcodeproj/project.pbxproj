@@ -201,11 +201,11 @@
 		502B9C53E996F6D316669B1CE86658A5 /* BrandButton */ = {
 			isa = PBXGroup;
 			children = (
-				6DBC8A3A2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift */,
 				6D80BB822B920686004842BC /* Resources */,
 				6D80BB462B91C3E5004842BC /* Extensions */,
 				2CC9E4AA1143705BE9A7615731E910F1 /* CustomBrandButton.swift */,
 				0ADCED223097E1F1B42D4B6B57405DCE /* CustomBrandButton.xib */,
+				6DBC8A3A2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift */,
 				1A1ED633FE8C5516BF171591A572B6F1 /* Pod */,
 				546E660AB7A3B42CFCBF3E63427E5559 /* Support Files */,
 			);
