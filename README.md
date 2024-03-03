@@ -59,9 +59,9 @@ First you need to install cocaopods, Here's a comprehensive guide on how to inst
 After installing the Cocoapods successfully  
 
 - Open the Podfile in a text editor and add the following line.
-
- pod 'BrandButton'
-
+  ```
+  pod 'BrandButton'
+  ```
 
 - Run the following command to install the framework and its dependencies:
  
@@ -73,7 +73,7 @@ And that's it! You've successfully integrated BrandButton into your project usin
 
 ## Getting Started
 To use BrandButton in your project, follow these steps:
-
+- UIKit:
 1. Import the module wherever you need to use the custom button:
 
    ```swift
@@ -105,7 +105,29 @@ To use BrandButton in your project, follow these steps:
     Methods:
       configure(title:type:color:): Configures the button with a specific title, type and color.
       configureIconStyle(): Configures the button's icon style (none, leading, or trailing).
+      
+- SwiftUI:
+  1. Import the module wherever you need to use the custom button:
 
+   ```swift
+   import BrandButton
+
+   2. Ceate an instance of CustomBrandButtonRepresentable and customize its properties as needed:
+    ```
+    CustomBrandButtonRepresentable(
+                title: "Title",
+                buttonType: .primary,
+                buttonColor: .green,
+                buttonIconStyle: .leading,
+                font: UIFont.systemFont(ofSize: 22),
+                iconPosition: .trailing,
+                iconImage: UIImage(systemName: "person.circle"),
+                isEnabled: false,
+                action: {
+                    print("Button tapped")
+                }
+    ```
+  
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
