@@ -105,9 +105,10 @@ import UIKit
     }
     
     // MARK: - UIView Configurations
-    public func configure(title: String? = "", type: ButtonType) {
+    public func configure(title: String? = "", type: ButtonType, color: ButtonColor) {
         titleLabel.text = title == "" ? self.title : title
         buttonType = type
+        buttonColor = color
         configure()
     }
     
@@ -141,7 +142,7 @@ import UIKit
     }
     
     private func configureSecondaryGreenStyle() {
-        titleLabel.textColor = isEnabled ? isHighlighted ? .lightGreenColor() : .darkGreenColor() : .primaryDisabled()
+        titleLabel.textColor = isEnabled ? isHighlighted ? .darkGreenColor() : .lightGreenColor() :  .primaryDisabled()
         containerView.backgroundColor = isHighlighted ? .secondaryGreenPressed() : .white
         setBorder(color: isEnabled ? isHighlighted ? .darkGreenColor() : .lightGreenColor() : .primaryDisabled())
     }

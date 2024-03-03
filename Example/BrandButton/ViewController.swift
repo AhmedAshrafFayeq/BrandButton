@@ -19,24 +19,20 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        brandButton.configure(type: .primary)
-        brandButton.buttonColor = .green
+        brandButton.configure(type: .primary, color: .green)
         brandButton.addTarget(self, action: #selector(didTapBrandButton), for: .touchUpInside)
         brandButton.leadingIcon = UIImage(named: "swift")
         brandButton.font = UIFont(name: "Helvetica-Bold", size: 15)
         
-        blueBrandButton.configure(title: "Primary Blue", type: .primary)
-        blueBrandButton.buttonColor = .blue
+        blueBrandButton.configure(title: "Primary Blue", type: .primary, color: .blue)
         blueBrandButton.isEnabled = false
         blueBrandButton.trailingIcon = UIImage(named: "swift")
         
-        secondaryGreenButton.configure(title: "Secondary", type: .secondary)
-        secondaryGreenButton.buttonColor = .green
+        secondaryGreenButton.configure(title: "Secondary", type: .secondary, color: .green)
         secondaryGreenButton.leadingIcon = UIImage(named: "swift-2")
         secondaryGreenButton.addTarget(self, action: #selector(didTapsecondaryGreenButton), for: .touchUpInside)
         
-        secondaryBlueButton.configure(title: "Secondary Blue", type: .secondary)
-        secondaryBlueButton.buttonColor = .blue
+        secondaryBlueButton.configure(title: "Secondary Blue", type: .secondary, color: .blue)
         secondaryBlueButton.isEnabled = false
         secondaryBlueButton.leadingIcon = UIImage(named: "swift-2")
         
@@ -45,13 +41,13 @@ class ViewController: UIViewController {
     @objc func didTapBrandButton() {
         print("did Tap Brand button")
         blueBrandButton.isEnabled = true
-        brandButton.buttonIconStyle = .leading
+        blueBrandButton.buttonIconStyle = .leading
 
     }
     
     @objc func didTapsecondaryGreenButton() {
         print("did Tap Brand button")
-        brandButton.buttonIconStyle = .trailing
+        blueBrandButton.buttonIconStyle = .trailing
         secondaryBlueButton.isEnabled = true
 
     }
