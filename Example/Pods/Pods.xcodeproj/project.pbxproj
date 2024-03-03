@@ -20,6 +20,7 @@
 		6D80BBB12B920686004842BC /* Proxima Nova Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D80BB952B920686004842BC /* Proxima Nova Bold.ttf */; };
 		6D80BBB32B920686004842BC /* Proxima Nova Bold It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D80BB972B920686004842BC /* Proxima Nova Bold It.ttf */; };
 		6D80BBB72B920686004842BC /* Proxima Nova Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D80BB9B2B920686004842BC /* Proxima Nova Reg.ttf */; };
+		6DBC8A3B2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC8A3A2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift */; };
 		7F9856D632B862508E33A0ED95164068 /* BrandButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62392A06DFBCD906E91A25F53998875B /* BrandButton-dummy.m */; };
 		98D7DA655A255EF14E3BAFCB50D1EAF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B1A6DB5534B9CEB873FB1A486CA8F7DE /* Pods-BrandButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C95DA71514B6DD888D915C133846D3 /* Pods-BrandButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,6 +79,7 @@
 		6D80BB952B920686004842BC /* Proxima Nova Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.ttf"; sourceTree = "<group>"; };
 		6D80BB972B920686004842BC /* Proxima Nova Bold It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold It.ttf"; sourceTree = "<group>"; };
 		6D80BB9B2B920686004842BC /* Proxima Nova Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Reg.ttf"; sourceTree = "<group>"; };
+		6DBC8A3A2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomBrandButtonRepresentable.swift; path = BrandButton/Classes/CustomBrandButtonRepresentable.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		806CB3DABF2A87F811D4B9021B966FC2 /* Pods-BrandButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrandButton_Example-Info.plist"; sourceTree = "<group>"; };
 		81E79C3738C9E076DD8A9D4430476D28 /* BrandButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrandButton; path = BrandButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +201,7 @@
 		502B9C53E996F6D316669B1CE86658A5 /* BrandButton */ = {
 			isa = PBXGroup;
 			children = (
+				6DBC8A3A2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift */,
 				6D80BB822B920686004842BC /* Resources */,
 				6D80BB462B91C3E5004842BC /* Extensions */,
 				2CC9E4AA1143705BE9A7615731E910F1 /* CustomBrandButton.swift */,
@@ -479,6 +482,7 @@
 			files = (
 				7F9856D632B862508E33A0ED95164068 /* BrandButton-dummy.m in Sources */,
 				4EC83A0E0727EA0BE7C683DDF1ABEB1B /* CustomBrandButton.swift in Sources */,
+				6DBC8A3B2B94699200FB68F6 /* CustomBrandButtonRepresentable.swift in Sources */,
 				2F58771BE0E710C496B4014451838B71 /* CustomBrandButton.xib in Sources */,
 				6D80BB482B91C3F3004842BC /* Extensions+UIColor.swift in Sources */,
 			);
