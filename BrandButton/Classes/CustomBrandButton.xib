@@ -48,14 +48,14 @@
                                 <constraint firstItem="mGa-ll-mUo" firstAttribute="leading" secondItem="vu7-pH-EwB" secondAttribute="leading" constant="-5" id="v58-bn-e8q"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-I9-dTP">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fq-I9-dTP">
                             <rect key="frame" x="0.0" y="0.0" width="388" height="125"/>
                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJO-RV-jvI">
-                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="125"/>
+                            <rect key="frame" x="388" y="0.0" width="0.0" height="125"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSb-O8-PpC">
                                     <rect key="frame" x="-19" y="50.666666666666664" width="24" height="23.999999999999993"/>
