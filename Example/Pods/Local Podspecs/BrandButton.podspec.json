@@ -1,6 +1,6 @@
 {
   "name": "BrandButton",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of BrandButton.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ahmedashraffayeq/BrandButton",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ahmedashraffayeq/BrandButton.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "12.0"
@@ -21,7 +21,7 @@
   "source_files": "BrandButton/Classes/**/*",
   "resource_bundles": {
     "BrandButton": [
-      "BrandButton/Assets/*.colorSet"
+      "BrandButton/Assets/**/*"
     ]
   }
 }
