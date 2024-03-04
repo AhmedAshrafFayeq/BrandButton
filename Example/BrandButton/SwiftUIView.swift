@@ -20,9 +20,11 @@ struct SwiftUIView: View {
                 type: .primary,
                 colorStyle: .green,
                 iconStyle: .leading,
-                font: UIFont.systemFont(ofSize: 22),
-                iconImage: UIImage(systemName: "person.circle"),
-                isEnabled: false
+                font: UIFont.systemFont(ofSize: 18),
+                iconImage: UIImage(systemName: "heart.fill"),
+                isEnabled: true,
+                highlitedFont: UIFont.systemFont(ofSize: 22),
+                highlitedIcon: UIImage(systemName: "star.fill")
             ) .frame(width: 180, height: 45)
                 .onTapGesture {
                     print("hello")

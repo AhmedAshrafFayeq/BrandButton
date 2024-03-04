@@ -21,8 +21,10 @@ struct CustomBrandButtonRepresentableExample: View {
                 colorStyle: .green,
                 iconStyle: .leading,
                 font: UIFont.systemFont(ofSize: 18),
-                iconImage: UIImage(systemName: "person.circle"),
-                isEnabled: buttonEnabled
+                iconImage: UIImage(systemName: "moon.fill"),
+                isEnabled: buttonEnabled,
+                highlitedFont: UIFont.systemFont(ofSize: 22),
+                highlitedIcon: UIImage(systemName: "sun.max.fill")
             )
                 .frame(width:250, height: 45)
         }
@@ -49,14 +51,18 @@ public struct BrandButtonView: UIViewRepresentable {
     var font: UIFont?
     var iconImage: UIImage?
     var isEnabled: Bool
+    var highlitedFont: UIFont?
+    var highlitedIcon: UIImage?
     
     public init(title: String?,
-         type: CustomBrandButton.`Type`,
-         colorStyle: CustomBrandButton.ColorStyle,
-         iconStyle: CustomBrandButton.IconStyle,
-         font: UIFont?,
-         iconImage: UIImage?,
-         isEnabled: Bool) {
+                type: CustomBrandButton.`Type`,
+                colorStyle: CustomBrandButton.ColorStyle,
+                iconStyle: CustomBrandButton.IconStyle,
+                font: UIFont?,
+                iconImage: UIImage?,
+                isEnabled: Bool,
+                highlitedFont: UIFont?,
+                highlitedIcon: UIImage?) {
         self.title = title
         self.type = type
         self.colorStyle = colorStyle
@@ -64,6 +70,8 @@ public struct BrandButtonView: UIViewRepresentable {
         self.font = font
         self.iconImage = iconImage
         self.isEnabled = isEnabled
+        self.highlitedFont = highlitedFont
+        self.highlitedIcon = highlitedIcon
     }
     
     public func makeUIView(context: Context) -> CustomBrandButton {
@@ -73,11 +81,14 @@ public struct BrandButtonView: UIViewRepresentable {
         button.colorStyle = colorStyle
         button.font = font
         button.isEnabled = isEnabled
+        button.highlitedFont = highlitedFont
         switch iconStyle {
         case .leading:
             button.leadingIcon = iconImage
+            button.highlitedLeadingIcon = highlitedIcon
         case .trailing:
             button.trailingIcon = iconImage
+            button.highlitedTrailingIcon = highlitedIcon
         case .none: break
         }
         return button
@@ -92,8 +103,10 @@ public struct BrandButtonView: UIViewRepresentable {
         switch iconStyle {
         case .leading:
             uiView.leadingIcon = iconImage
+            uiView.highlitedLeadingIcon = highlitedIcon
         case .trailing:
             uiView.trailingIcon = iconImage
+            uiView.highlitedTrailingIcon = highlitedIcon
         case .none: break
         }
     }
