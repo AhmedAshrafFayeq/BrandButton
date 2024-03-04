@@ -30,19 +30,19 @@ import UIKit
         }
     }
     
-    public var buttonType: ButtonType = .primary {
+    public var type: `Type` = .primary {
         didSet {
             configure()
         }
     }
     
-    public var buttonColor: ButtonColor = .green {
+    public var colorStyle: ColorStyle = .green {
         didSet {
             configure()
         }
     }
     
-    public var buttonIconStyle: ButtonIconStyle = .none {
+    private var iconStyle: IconStyle = .none {
         didSet {
             configureIconStyle()
         }
@@ -53,8 +53,14 @@ import UIKit
             titleLabel.font = font
         }
     }
+    
+    public var highlitedFont: UIFont?
+    
+    public var highlitedLeadingIcon: UIImage?
+    
+    public var highlitedTrailingIcon: UIImage?
 
-    @IBInspectable var title: String? {
+    @IBInspectable public var title: String? {
         didSet {
             titleLabel.text = title
         }
@@ -62,16 +68,16 @@ import UIKit
     
     public var leadingIcon: UIImage? {
         didSet {
+            iconStyle = .leading
             leadingIconContainer.isHidden  = false
-            leadingIconImageView.image     = leadingIcon
             trailingIconContainer.isHidden = true
         }
     }
 
     public var trailingIcon: UIImage? {
         didSet {
+            iconStyle = .trailing
             trailingIconContainer.isHidden = false
-            trailingIconImageView.image    = trailingIcon
             leadingIconContainer.isHidden  = true
         }
     }
@@ -90,10 +96,11 @@ import UIKit
     private func setupUI() {
         loadNib()
         setupContainerView()
+        configure()
     }
     
     private func loadNib() {
-        let bundle = Bundle(for: type(of: self))
+        let bundle = Bundle(for: Swift.type(of: self))
         bundle.loadNibNamed(String(describing: CustomBrandButton.self), owner: self, options: nil)
     }
     
@@ -105,29 +112,39 @@ import UIKit
     }
     
     // MARK: - UIView Configurations
-    public func configure(title: String? = "", type: ButtonType, color: ButtonColor) {
-        titleLabel.text = title == "" ? self.title : title
-        buttonType = type
-        buttonColor = color
-        configure()
-    }
-    
     private func configure() {
-        switch buttonType {
+        switch type {
         case .primary:
-            switch buttonColor {
+            switch colorStyle {
             case .green:
                 configurePrimaryGreenStyle()
             case .blue:
                 configurePrimaryBlueStyle()
             }
         case .secondary:
-            switch buttonColor {
+            switch colorStyle {
             case .green:
                 configureSecondaryGreenStyle()
             case .blue:
                 configureSecondaryBlueStyle()
             }
+        }
+        configureFont()
+        configureIcon()
+    }
+    
+    private func configureFont() {
+        titleLabel.font = isHighlighted ? highlitedFont ?? font : font
+    }
+    
+    private func configureIcon() {
+        switch iconStyle {
+        case .leading:
+            leadingIconImageView.image = isHighlighted ? highlitedLeadingIcon ?? leadingIcon : leadingIcon
+            
+        case .trailing:
+            trailingIconImageView.image = isHighlighted ? highlitedTrailingIcon ?? trailingIcon : trailingIcon
+        case .none: break
         }
     }
     
@@ -154,13 +171,13 @@ import UIKit
 
     }
     
-    private func setBorder(color: UIColor) {
-        containerView.layer.borderWidth = 1.0
+    private func setBorder(color: UIColor, width: CGFloat = 1.0) {
+        containerView.layer.borderWidth = width
         containerView.layer.borderColor = color.cgColor
     }
     
     private func configureIconStyle() {
-        switch buttonIconStyle {
+        switch iconStyle {
         case .none:
             setupNoneStyleForView()
         case .leading:
@@ -178,14 +195,16 @@ import UIKit
     private func setupLeadingStyleForView() {
         leadingIconContainer.isHidden = false
         // Move trailingIcon to leadingImageView if exists
-        leadingIconImageView.image = trailingIconImageView.image != nil ? trailingIconImageView.image : leadingIconImageView.image
+        leadingIconImageView.image = leadingIcon
+        highlitedLeadingIcon = leadingIcon
         trailingIconContainer.isHidden = true
     }
     
     private func setupTrailingStyleForView() {
         trailingIconContainer.isHidden = false
         // Move leadingIcon to trailingImageView if exists
-        trailingIconImageView.image = leadingIconImageView.image != nil ? leadingIconImageView.image : trailingIconImageView.image
+        trailingIconImageView.image =  trailingIcon
+        highlitedTrailingIcon = trailingIcon
         leadingIconContainer.isHidden = true
     }
 }
@@ -193,17 +212,17 @@ import UIKit
 
 extension CustomBrandButton {
     
-    public enum ButtonType {
+    public enum `Type` {
         case primary
         case secondary
     }
     
-    public enum ButtonColor{
+    public enum ColorStyle {
         case green
         case blue
     }
     
-    public enum ButtonIconStyle {
+    public enum IconStyle {
         case none
         case leading
         case trailing

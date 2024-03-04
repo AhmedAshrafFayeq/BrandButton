@@ -19,20 +19,24 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        brandButton.configure(type: .primary, color: .green)
         brandButton.addTarget(self, action: #selector(didTapBrandButton), for: .touchUpInside)
         brandButton.leadingIcon = UIImage(named: "swift")
-        brandButton.font = UIFont(name: "Helvetica-Bold", size: 15)
+        brandButton.font = UIFont(name: "Helvetica-Regular", size: 15)
+        brandButton.highlitedFont = UIFont(name: "Helvetica-Bold", size: 18)
+        brandButton.highlitedLeadingIcon = UIImage(named: "swift-2")
         
-        blueBrandButton.configure(title: "Primary Blue", type: .primary, color: .blue)
-        blueBrandButton.isEnabled = false
-        blueBrandButton.trailingIcon = UIImage(named: "swift")
+        blueBrandButton.title = "Primary Blue"
+        blueBrandButton.colorStyle = .blue
+//        blueBrandButton.trailingIcon = UIImage(named: "swift")
         
-        secondaryGreenButton.configure(title: "Secondary", type: .secondary, color: .green)
+        secondaryGreenButton.title = "Secondary"
+        secondaryGreenButton.type = .secondary
         secondaryGreenButton.leadingIcon = UIImage(named: "swift-2")
         secondaryGreenButton.addTarget(self, action: #selector(didTapsecondaryGreenButton), for: .touchUpInside)
         
-        secondaryBlueButton.configure(title: "Secondary Blue", type: .secondary, color: .blue)
+        secondaryBlueButton.title = "Secondary Blue"
+        secondaryBlueButton.type = .secondary
+        secondaryBlueButton.colorStyle = .blue
         secondaryBlueButton.isEnabled = false
         secondaryBlueButton.leadingIcon = UIImage(named: "swift-2")
         
@@ -40,14 +44,14 @@ class ViewController: UIViewController {
     
     @objc func didTapBrandButton() {
         print("did Tap Brand button")
-        blueBrandButton.isEnabled = true
-        blueBrandButton.buttonIconStyle = .leading
-
+        blueBrandButton.leadingIcon = UIImage(named: "swift-2")
     }
     
     @objc func didTapsecondaryGreenButton() {
         print("did Tap Brand button")
-        blueBrandButton.buttonIconStyle = .trailing
+        blueBrandButton.trailingIcon = UIImage(named: "swift")
+        blueBrandButton.highlitedTrailingIcon = UIImage(named: "swift-2")
+
         secondaryBlueButton.isEnabled = true
 
     }

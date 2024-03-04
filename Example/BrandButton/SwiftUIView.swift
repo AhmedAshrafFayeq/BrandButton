@@ -15,7 +15,7 @@ struct SwiftUIView: View {
     var body: some View {
         VStack {
             Text("Hello, From Example File!")
-            CustomBrandButtonRepresentable(
+            BrandButtonView(
                 title: "Title",
                 buttonType: .primary,
                 buttonColor: .green,
@@ -23,11 +23,11 @@ struct SwiftUIView: View {
                 font: UIFont.systemFont(ofSize: 22),
                 iconPosition: .trailing,
                 iconImage: UIImage(systemName: "person.circle"),
-                isEnabled: false,
-                action: {
-                    print("Button tapped")
-                }
+                isEnabled: false
             ) .frame(width: 180, height: 45)
+                .onTapGesture {
+                    print("hello")
+                }
         }
 
     }
