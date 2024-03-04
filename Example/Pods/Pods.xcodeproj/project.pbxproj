@@ -7,46 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0F453EA140DBD45593A383909D3689 /* CustomBrandButton.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CBD0FE4383F91A09DC71065E3E2EE /* CustomBrandButton.xib */; };
+		1D0F453EA140DBD45593A383909D3689 /* CustomBrandButton.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A2434B6A08E84788D1F7E14A08BD1 /* CustomBrandButton.xib */; };
 		1D72A5772549813478A69857EE175642 /* BrandButton-BrandButton in Resources */ = {isa = PBXBuildFile; fileRef = 948CAAE32533CE2C4D8766CECA7BCFD2 /* BrandButton-BrandButton */; };
-		1DEBA6E399969D62EA99CB5900EC2C57 /* CustomBrandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F31C19F705DAFBFF9AC50BDF50908D /* CustomBrandButton.swift */; };
+		1DEBA6E399969D62EA99CB5900EC2C57 /* CustomBrandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCEC9716CFBEBDC8D93F6BEFB0D39FA /* CustomBrandButton.swift */; };
 		279148BE77D2BC9798C40742968326E4 /* Pods-BrandButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B243C1ABD778464BC7800734FF9FE18C /* Pods-BrandButton_Tests-dummy.m */; };
-		296B18AE01EEAC31B21D4603E0752814 /* Proxima Nova Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8087B9B26FC3D7EDC21A2061BA31366D /* Proxima Nova Reg.ttf */; };
-		29965ED430E9D16081D55676BAD25F34 /* BrandButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE488994125065716626ED4B20DE6B1 /* BrandButton-dummy.m */; };
-		382D08D75B7A816EE5F8EF60861A5533 /* Proxima Nova Bold It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60270046C0887F0BA231968B64BE8553 /* Proxima Nova Bold It.ttf */; };
+		29965ED430E9D16081D55676BAD25F34 /* BrandButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0665637E61DECB0C3FE0D52C40DD21BE /* BrandButton-dummy.m */; };
 		3D33810CBAE7F6FCEE8A2A0A708A77DC /* Pods-BrandButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C67502AED8108F62710721C86C9388F3 /* Pods-BrandButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49C3C650DD2825EEA9B7A0B5BA47301C /* Pods-BrandButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B196D0DB463D9BF2A36590AFC56CB71 /* Pods-BrandButton_Example-dummy.m */; };
-		4A0B4C89A144E48A5BC926A59C1C5F34 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4A8C34BEA9FA3D7B878B295A10F37 /* Extensions+UIColor.swift */; };
-		5A4D1930CD7D1DFB3FE72CB52170D084 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5F8445B8394B0AA515F7F71B83778923 /* fonts */; };
-		6DBC8A742B95F59000FB68F6 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 3CE0D449A13D0565A466D0ECD3A75B0B /* Resources */; };
+		4A0B4C89A144E48A5BC926A59C1C5F34 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088A5855B009304DF95B7A9A2A40077D /* Extensions+UIColor.swift */; };
+		6DBC8AE52B95FE9800FB68F6 /* Proxima Nova Light It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8AC92B95FE9800FB68F6 /* Proxima Nova Light It.ttf */; };
+		6DBC8AEF2B95FE9800FB68F6 /* Proxima Nova Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8AD32B95FE9800FB68F6 /* Proxima Nova Light.ttf */; };
+		6DBC8AF02B95FE9800FB68F6 /* glyphicons-halflings-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8AD42B95FE9800FB68F6 /* glyphicons-halflings-regular.ttf */; };
+		6DBC8AF12B95FE9800FB68F6 /* Proxima Nova Reg It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8AD52B95FE9800FB68F6 /* Proxima Nova Reg It.ttf */; };
+		6DBC8AF62B95FE9800FB68F6 /* Proxima Nova Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8ADA2B95FE9800FB68F6 /* Proxima Nova Bold.ttf */; };
+		6DBC8AF82B95FE9800FB68F6 /* Proxima Nova Bold It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8ADC2B95FE9800FB68F6 /* Proxima Nova Bold It.ttf */; };
+		6DBC8AFC2B95FE9800FB68F6 /* Proxima Nova Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC8AE02B95FE9800FB68F6 /* Proxima Nova Reg.ttf */; };
 		7A0A4260DBCB7E284C53E4A4FD2CA1B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8CA73DBF22EF20B78DECE52BFC905525 /* Proxima Nova Reg It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0823E27DEA9C5F2BECDCBDA37C7F9533 /* Proxima Nova Reg It.ttf */; };
-		98D34D2726AE249DB9B5121B383369B9 /* CustomBrandButtonRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C3AE61C291751502103DBEDFC9D4B /* CustomBrandButtonRepresentable.swift */; };
+		98D34D2726AE249DB9B5121B383369B9 /* CustomBrandButtonRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6BD42CA6D03405DA92559B01862F /* CustomBrandButtonRepresentable.swift */; };
 		98D7DA655A255EF14E3BAFCB50D1EAF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B1A6DB5534B9CEB873FB1A486CA8F7DE /* Pods-BrandButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C95DA71514B6DD888D915C133846D3 /* Pods-BrandButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D09C7FA1BA2C460B87ECF9C14C638E4A /* Proxima Nova Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCFEEE62E187BA9B738E9B58DF7AF /* Proxima Nova Light.ttf */; };
-		D1C61C330AB5D7FD0BFF83BEF0B3E5A5 /* Proxima Nova Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7EA3649C6B0FE5264BF3EACEFC1D579 /* Proxima Nova Bold.ttf */; };
-		EB7FE2D802EDF526E946B141A223BC28 /* BrandButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6B77637A04565FFCEF640A9A01D05E /* BrandButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF9185BF94B338582A0E70426A25EA0B /* Proxima Nova Light It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB05B860BE9288790A8E69D1D0DBD12 /* Proxima Nova Light It.ttf */; };
+		EB7FE2D802EDF526E946B141A223BC28 /* BrandButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AC4F2FCF770F4E6C0B3A782169253C /* BrandButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F393D268301B554EB72F1EFBE0AA778D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8EFF693BDDA95DB6EBAE4FAB0185F04F /* PBXContainerItemProxy */ = {
+		02AEC9010A638904E2AFF0BA01A3CC91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4D7BA0C4082671DA15FF6261C7B241BB;
 			remoteInfo = "Pods-BrandButton_Example";
 		};
-		D11D65DB751AC010DED67C21BAD74B49 /* PBXContainerItemProxy */ = {
+		672EC4C4680556C7A5698BA2A8B3AEBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22CAFF5E569EBD2C9EAF6581E6E0F32C;
 			remoteInfo = BrandButton;
 		};
-		F9D125A40820B37C8B9B792FDF65B32B /* PBXContainerItemProxy */ = {
+		694A4BF7F6578183AF0FA8DE7B724C8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -57,46 +56,45 @@
 
 /* Begin PBXFileReference section */
 		0021C975CB30B289FF646E7E7FA50606 /* Pods-BrandButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrandButton_Tests-Info.plist"; sourceTree = "<group>"; };
-		015C3AE61C291751502103DBEDFC9D4B /* CustomBrandButtonRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomBrandButtonRepresentable.swift; path = BrandButton/Classes/CustomBrandButtonRepresentable.swift; sourceTree = "<group>"; };
-		0823E27DEA9C5F2BECDCBDA37C7F9533 /* Proxima Nova Reg It.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Proxima Nova Reg It.ttf"; sourceTree = "<group>"; };
+		0665637E61DECB0C3FE0D52C40DD21BE /* BrandButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrandButton-dummy.m"; sourceTree = "<group>"; };
+		088A5855B009304DF95B7A9A2A40077D /* Extensions+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
+		15C0D2269EB4D3D69093A4C20C8A1079 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1F3D3EF33F5DA6A10F91BDB947C69205 /* Pods-BrandButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BrandButton_Example.modulemap"; sourceTree = "<group>"; };
-		1FB05B860BE9288790A8E69D1D0DBD12 /* Proxima Nova Light It.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Proxima Nova Light It.ttf"; sourceTree = "<group>"; };
-		223F32E23924D2048B58B75FDE41B144 /* BrandButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrandButton.debug.xcconfig; sourceTree = "<group>"; };
 		2833C4DE491F1B057AB472B6FB9A902F /* Pods-BrandButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrandButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		28E791D2A1F197C7919A557871BF6648 /* Pods-BrandButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrandButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2B6B77637A04565FFCEF640A9A01D05E /* BrandButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrandButton-umbrella.h"; sourceTree = "<group>"; };
+		30AF9982FFB7F371D52644D981F2D811 /* BrandButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrandButton.release.xcconfig; sourceTree = "<group>"; };
 		31C95DA71514B6DD888D915C133846D3 /* Pods-BrandButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BrandButton_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3CE0D449A13D0565A466D0ECD3A75B0B /* Resources */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Resources; path = BrandButton/Assets/Resources; sourceTree = "<group>"; };
+		468506970CCC849CDD4A83E79F597D37 /* BrandButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BrandButton-Info.plist"; sourceTree = "<group>"; };
+		489578F1E8B53A75C58C3146CD970DB4 /* BrandButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrandButton.debug.xcconfig; sourceTree = "<group>"; };
 		4B196D0DB463D9BF2A36590AFC56CB71 /* Pods-BrandButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BrandButton_Example-dummy.m"; sourceTree = "<group>"; };
 		4FECCCC64A49636BFFCD613F0CD36D14 /* Pods-BrandButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrandButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		53A74D6465FB013B37239F0889D7FB3C /* Pods-BrandButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BrandButton_Tests.modulemap"; sourceTree = "<group>"; };
 		59FEAFE4E2F202F24C34DFF06414D80D /* Pods-BrandButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrandButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F8445B8394B0AA515F7F71B83778923 /* fonts */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		60270046C0887F0BA231968B64BE8553 /* Proxima Nova Bold It.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Proxima Nova Bold It.ttf"; sourceTree = "<group>"; };
-		6CE488994125065716626ED4B20DE6B1 /* BrandButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrandButton-dummy.m"; sourceTree = "<group>"; };
+		5DCEC9716CFBEBDC8D93F6BEFB0D39FA /* CustomBrandButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomBrandButton.swift; path = BrandButton/Classes/CustomBrandButton.swift; sourceTree = "<group>"; };
+		64AC4F2FCF770F4E6C0B3A782169253C /* BrandButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrandButton-umbrella.h"; sourceTree = "<group>"; };
+		6DBC8AC92B95FE9800FB68F6 /* Proxima Nova Light It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Light It.ttf"; sourceTree = "<group>"; };
+		6DBC8AD32B95FE9800FB68F6 /* Proxima Nova Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Light.ttf"; sourceTree = "<group>"; };
+		6DBC8AD42B95FE9800FB68F6 /* glyphicons-halflings-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "glyphicons-halflings-regular.ttf"; sourceTree = "<group>"; };
+		6DBC8AD52B95FE9800FB68F6 /* Proxima Nova Reg It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Reg It.ttf"; sourceTree = "<group>"; };
+		6DBC8ADA2B95FE9800FB68F6 /* Proxima Nova Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.ttf"; sourceTree = "<group>"; };
+		6DBC8ADC2B95FE9800FB68F6 /* Proxima Nova Bold It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold It.ttf"; sourceTree = "<group>"; };
+		6DBC8AE02B95FE9800FB68F6 /* Proxima Nova Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Reg.ttf"; sourceTree = "<group>"; };
+		6FAE691C02074EE1003F19F14A815D6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		706A7D736B97BF948B90283759917221 /* BrandButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrandButton-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7D14EB347BDE079C9A24512A4B424120 /* BrandButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BrandButton.modulemap; sourceTree = "<group>"; };
 		806CB3DABF2A87F811D4B9021B966FC2 /* Pods-BrandButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrandButton_Example-Info.plist"; sourceTree = "<group>"; };
-		8087B9B26FC3D7EDC21A2061BA31366D /* Proxima Nova Reg.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Proxima Nova Reg.ttf"; sourceTree = "<group>"; };
 		81E79C3738C9E076DD8A9D4430476D28 /* BrandButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrandButton; path = BrandButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		834A77F92D73C7667E8EB0A8A89F7F72 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		83CA7E09B774176AA2AF57D80476B9AF /* BrandButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BrandButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8747493ED531EA8ED2813E91AFAAD0B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8D4CBD0FE4383F91A09DC71065E3E2EE /* CustomBrandButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CustomBrandButton.xib; path = BrandButton/Classes/CustomBrandButton.xib; sourceTree = "<group>"; };
+		837DD5F083FD5A4E95A09654BA20C4AB /* ResourceBundle-BrandButton-BrandButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BrandButton-BrandButton-Info.plist"; sourceTree = "<group>"; };
 		948CAAE32533CE2C4D8766CECA7BCFD2 /* BrandButton-BrandButton */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "BrandButton-BrandButton"; path = BrandButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		95F31C19F705DAFBFF9AC50BDF50908D /* CustomBrandButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomBrandButton.swift; path = BrandButton/Classes/CustomBrandButton.swift; sourceTree = "<group>"; };
-		9A5CCFEEE62E187BA9B738E9B58DF7AF /* Proxima Nova Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Proxima Nova Light.ttf"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7EA3649C6B0FE5264BF3EACEFC1D579 /* Proxima Nova Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Proxima Nova Bold.ttf"; sourceTree = "<group>"; };
-		AA29AB2085E98C009EFF3E0F9D164A3B /* ResourceBundle-BrandButton-BrandButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BrandButton-BrandButton-Info.plist"; sourceTree = "<group>"; };
-		AC2BFD3E67DD7DF176161F29006086BA /* BrandButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrandButton.release.xcconfig; sourceTree = "<group>"; };
+		9E8A2434B6A08E84788D1F7E14A08BD1 /* CustomBrandButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CustomBrandButton.xib; path = BrandButton/Classes/CustomBrandButton.xib; sourceTree = "<group>"; };
 		B12E21C987AAE74BE411D653752AEE67 /* Pods-BrandButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrandButton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B243C1ABD778464BC7800734FF9FE18C /* Pods-BrandButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BrandButton_Tests-dummy.m"; sourceTree = "<group>"; };
 		B91AEC518C44D90EB969403026FC4A8E /* Pods-BrandButton_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BrandButton_Tests"; path = Pods_BrandButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C034A5E14A183090B262B3AEBA48E3E2 /* BrandButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BrandButton.modulemap; sourceTree = "<group>"; };
 		C67502AED8108F62710721C86C9388F3 /* Pods-BrandButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BrandButton_Example-umbrella.h"; sourceTree = "<group>"; };
-		C7F4A8C34BEA9FA3D7B878B295A10F37 /* Extensions+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
-		DBE7636C8D2375D0016D3BF4142E88A4 /* BrandButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrandButton-prefix.pch"; sourceTree = "<group>"; };
-		E143E96873E847C1758A80C093161199 /* BrandButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BrandButton-Info.plist"; sourceTree = "<group>"; };
+		D05C6BD42CA6D03405DA92559B01862F /* CustomBrandButtonRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomBrandButtonRepresentable.swift; path = BrandButton/Classes/CustomBrandButtonRepresentable.swift; sourceTree = "<group>"; };
+		D8E497F3147E9082F48C7F57AF676682 /* BrandButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BrandButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E1E73342421A8EE2E0A02483B620AC99 /* Pods-BrandButton_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BrandButton_Example"; path = Pods_BrandButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA85DFA7DC8301F55A53C6B7987D80E4 /* Pods-BrandButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BrandButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EBC0729E5A59C07DA3BB271757A86600 /* Pods-BrandButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BrandButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -121,6 +119,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1D6BABDF4962226B22237ED98687B63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EACFE7539DCEB313103D2DB337B113BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,16 +134,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF99A66A960DA734CA9221FC71B939B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D42E51AE69C48A58876797B6D46B39 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC05DE7F75E9789F74E804C66B03CD /* BrandButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		09F1A8B5999A513D413036132032EC61 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C034A5E14A183090B262B3AEBA48E3E2 /* BrandButton.modulemap */,
+				0665637E61DECB0C3FE0D52C40DD21BE /* BrandButton-dummy.m */,
+				468506970CCC849CDD4A83E79F597D37 /* BrandButton-Info.plist */,
+				706A7D736B97BF948B90283759917221 /* BrandButton-prefix.pch */,
+				64AC4F2FCF770F4E6C0B3A782169253C /* BrandButton-umbrella.h */,
+				489578F1E8B53A75C58C3146CD970DB4 /* BrandButton.debug.xcconfig */,
+				30AF9982FFB7F371D52644D981F2D811 /* BrandButton.release.xcconfig */,
+				837DD5F083FD5A4E95A09654BA20C4AB /* ResourceBundle-BrandButton-BrandButton-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BrandButton";
+			sourceTree = "<group>";
+		};
 		0A2004513CF4847AC558F21693C653CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,14 +214,6 @@
 			path = "Target Support Files/Pods-BrandButton_Tests";
 			sourceTree = "<group>";
 		};
-		3B4DA890EA3FDDF8A876ABE65143E249 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9CB5FFBD1B775A3BE9E6A3ED8F7BD1E /* BrandButton */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,53 +222,59 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		64B359E39CAA531DC22A295D679152C4 /* Resources */ = {
+		6A2B95FE316A639732944E7DA21344DC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5F8445B8394B0AA515F7F71B83778923 /* fonts */,
-				A024DED27663516416AD678EFB5996AC /* fonts */,
+				D8E497F3147E9082F48C7F57AF676682 /* BrandButton.podspec */,
+				6FAE691C02074EE1003F19F14A815D6D /* LICENSE */,
+				15C0D2269EB4D3D69093A4C20C8A1079 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6DBC8AC72B95FE9800FB68F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC8AC82B95FE9800FB68F6 /* fonts */,
 			);
 			name = Resources;
 			path = BrandButton/Assets/Resources;
 			sourceTree = "<group>";
 		};
-		8B89D55513AED7A9BDEB3B35F449A245 /* Pod */ = {
+		6DBC8AC82B95FE9800FB68F6 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				83CA7E09B774176AA2AF57D80476B9AF /* BrandButton.podspec */,
-				8747493ED531EA8ED2813E91AFAAD0B3 /* LICENSE */,
-				834A77F92D73C7667E8EB0A8A89F7F72 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		96E242C4513BFB937F5868D1CB982EDA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C7F4A8C34BEA9FA3D7B878B295A10F37 /* Extensions+UIColor.swift */,
-			);
-			name = Extensions;
-			path = BrandButton/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		A024DED27663516416AD678EFB5996AC /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				A7EA3649C6B0FE5264BF3EACEFC1D579 /* Proxima Nova Bold.ttf */,
-				60270046C0887F0BA231968B64BE8553 /* Proxima Nova Bold It.ttf */,
-				9A5CCFEEE62E187BA9B738E9B58DF7AF /* Proxima Nova Light.ttf */,
-				1FB05B860BE9288790A8E69D1D0DBD12 /* Proxima Nova Light It.ttf */,
-				8087B9B26FC3D7EDC21A2061BA31366D /* Proxima Nova Reg.ttf */,
-				0823E27DEA9C5F2BECDCBDA37C7F9533 /* Proxima Nova Reg It.ttf */,
+				6DBC8AC92B95FE9800FB68F6 /* Proxima Nova Light It.ttf */,
+				6DBC8AD32B95FE9800FB68F6 /* Proxima Nova Light.ttf */,
+				6DBC8AD42B95FE9800FB68F6 /* glyphicons-halflings-regular.ttf */,
+				6DBC8AD52B95FE9800FB68F6 /* Proxima Nova Reg It.ttf */,
+				6DBC8ADA2B95FE9800FB68F6 /* Proxima Nova Bold.ttf */,
+				6DBC8ADC2B95FE9800FB68F6 /* Proxima Nova Bold It.ttf */,
+				6DBC8AE02B95FE9800FB68F6 /* Proxima Nova Reg.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
+		};
+		7EDC05DE7F75E9789F74E804C66B03CD /* BrandButton */ = {
+			isa = PBXGroup;
+			children = (
+				5DCEC9716CFBEBDC8D93F6BEFB0D39FA /* CustomBrandButton.swift */,
+				9E8A2434B6A08E84788D1F7E14A08BD1 /* CustomBrandButton.xib */,
+				D05C6BD42CA6D03405DA92559B01862F /* CustomBrandButtonRepresentable.swift */,
+				6DBC8AC72B95FE9800FB68F6 /* Resources */,
+				EEA2D0A073CBEFE248C668AB7C17B0F4 /* Extensions */,
+				6A2B95FE316A639732944E7DA21344DC /* Pod */,
+				09F1A8B5999A513D413036132032EC61 /* Support Files */,
+			);
+			name = BrandButton;
+			path = /Users/ahmedfayek/Desktop/Me/Projects/BrandButton/BrandButton;
+			sourceTree = "<absolute>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3B4DA890EA3FDDF8A876ABE65143E249 /* Development Pods */,
+				05D42E51AE69C48A58876797B6D46B39 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				0A2004513CF4847AC558F21693C653CC /* Products */,
 				1AE3419B7BD5B61C08C2D0CDC3347BD7 /* Targets Support Files */,
@@ -269,37 +289,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F5449F70B7E6896483758CF8567B856F /* Support Files */ = {
+		EEA2D0A073CBEFE248C668AB7C17B0F4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7D14EB347BDE079C9A24512A4B424120 /* BrandButton.modulemap */,
-				6CE488994125065716626ED4B20DE6B1 /* BrandButton-dummy.m */,
-				E143E96873E847C1758A80C093161199 /* BrandButton-Info.plist */,
-				DBE7636C8D2375D0016D3BF4142E88A4 /* BrandButton-prefix.pch */,
-				2B6B77637A04565FFCEF640A9A01D05E /* BrandButton-umbrella.h */,
-				223F32E23924D2048B58B75FDE41B144 /* BrandButton.debug.xcconfig */,
-				AC2BFD3E67DD7DF176161F29006086BA /* BrandButton.release.xcconfig */,
-				AA29AB2085E98C009EFF3E0F9D164A3B /* ResourceBundle-BrandButton-BrandButton-Info.plist */,
+				088A5855B009304DF95B7A9A2A40077D /* Extensions+UIColor.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BrandButton";
+			name = Extensions;
+			path = BrandButton/Classes/Extensions;
 			sourceTree = "<group>";
-		};
-		F9CB5FFBD1B775A3BE9E6A3ED8F7BD1E /* BrandButton */ = {
-			isa = PBXGroup;
-			children = (
-				95F31C19F705DAFBFF9AC50BDF50908D /* CustomBrandButton.swift */,
-				8D4CBD0FE4383F91A09DC71065E3E2EE /* CustomBrandButton.xib */,
-				015C3AE61C291751502103DBEDFC9D4B /* CustomBrandButtonRepresentable.swift */,
-				3CE0D449A13D0565A466D0ECD3A75B0B /* Resources */,
-				96E242C4513BFB937F5868D1CB982EDA /* Extensions */,
-				8B89D55513AED7A9BDEB3B35F449A245 /* Pod */,
-				64B359E39CAA531DC22A295D679152C4 /* Resources */,
-				F5449F70B7E6896483758CF8567B856F /* Support Files */,
-			);
-			name = BrandButton;
-			path = /Users/ahmedfayek/Desktop/Me/Projects/BrandButton/BrandButton;
-			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -343,7 +340,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D537D1FB2B6F787C04E49F1A0A218C55 /* PBXTargetDependency */,
+				1EA0A2A6496DA6070A2EBB7DE8C802D3 /* PBXTargetDependency */,
 			);
 			name = BrandButton;
 			productName = BrandButton;
@@ -362,7 +359,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0DF78A22452BA0A13E78DD3ED7ABECB9 /* PBXTargetDependency */,
+				55B05CDFF79A42D936DFA7EF83F194DF /* PBXTargetDependency */,
 			);
 			name = "Pods-BrandButton_Example";
 			productName = Pods_BrandButton_Example;
@@ -381,7 +378,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				28ED3E928B45EB3BCF94BA20F137158A /* PBXTargetDependency */,
+				C0961971FBB8F69AF1EE75613A7D154D /* PBXTargetDependency */,
 			);
 			name = "Pods-BrandButton_Tests";
 			productName = Pods_BrandButton_Tests;
@@ -390,11 +387,11 @@
 		};
 		73AA23EDB004D1AB2BF9F13C23D04158 /* BrandButton-BrandButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D034C05C866D3DA8C3434B265F08EB50 /* Build configuration list for PBXNativeTarget "BrandButton-BrandButton" */;
+			buildConfigurationList = AD82ABEB7E03C03F56DB33D58418030D /* Build configuration list for PBXNativeTarget "BrandButton-BrandButton" */;
 			buildPhases = (
-				B5CC693CD903BE4471872BA5305E0ED5 /* Sources */,
-				EF99A66A960DA734CA9221FC71B939B7 /* Frameworks */,
-				2832C2EA0918D49F8A131305256E4E03 /* Resources */,
+				BA8499D681E23A3FE09173E546BD4515 /* Sources */,
+				D1D6BABDF4962226B22237ED98687B63 /* Frameworks */,
+				3DF78906AD9A9E09FB5FEB8E33F3765A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -436,26 +433,25 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2832C2EA0918D49F8A131305256E4E03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A4D1930CD7D1DFB3FE72CB52170D084 /* fonts in Resources */,
-				D1C61C330AB5D7FD0BFF83BEF0B3E5A5 /* Proxima Nova Bold.ttf in Resources */,
-				382D08D75B7A816EE5F8EF60861A5533 /* Proxima Nova Bold It.ttf in Resources */,
-				D09C7FA1BA2C460B87ECF9C14C638E4A /* Proxima Nova Light.ttf in Resources */,
-				EF9185BF94B338582A0E70426A25EA0B /* Proxima Nova Light It.ttf in Resources */,
-				296B18AE01EEAC31B21D4603E0752814 /* Proxima Nova Reg.ttf in Resources */,
-				8CA73DBF22EF20B78DECE52BFC905525 /* Proxima Nova Reg It.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2C61C1B738159353E43812E5C37627DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBC8A742B95F59000FB68F6 /* Resources in Resources */,
+				6DBC8AEF2B95FE9800FB68F6 /* Proxima Nova Light.ttf in Resources */,
+				6DBC8AF82B95FE9800FB68F6 /* Proxima Nova Bold It.ttf in Resources */,
+				6DBC8AE52B95FE9800FB68F6 /* Proxima Nova Light It.ttf in Resources */,
+				6DBC8AF02B95FE9800FB68F6 /* glyphicons-halflings-regular.ttf in Resources */,
+				6DBC8AF62B95FE9800FB68F6 /* Proxima Nova Bold.ttf in Resources */,
+				6DBC8AFC2B95FE9800FB68F6 /* Proxima Nova Reg.ttf in Resources */,
+				6DBC8AF12B95FE9800FB68F6 /* Proxima Nova Reg It.ttf in Resources */,
 				1D72A5772549813478A69857EE175642 /* BrandButton-BrandButton in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF78906AD9A9E09FB5FEB8E33F3765A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +500,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CC693CD903BE4471872BA5305E0ED5 /* Sources */ = {
+		BA8499D681E23A3FE09173E546BD4515 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,23 +510,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0DF78A22452BA0A13E78DD3ED7ABECB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BrandButton;
-			target = 22CAFF5E569EBD2C9EAF6581E6E0F32C /* BrandButton */;
-			targetProxy = D11D65DB751AC010DED67C21BAD74B49 /* PBXContainerItemProxy */;
-		};
-		28ED3E928B45EB3BCF94BA20F137158A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-BrandButton_Example";
-			target = 4D7BA0C4082671DA15FF6261C7B241BB /* Pods-BrandButton_Example */;
-			targetProxy = 8EFF693BDDA95DB6EBAE4FAB0185F04F /* PBXContainerItemProxy */;
-		};
-		D537D1FB2B6F787C04E49F1A0A218C55 /* PBXTargetDependency */ = {
+		1EA0A2A6496DA6070A2EBB7DE8C802D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "BrandButton-BrandButton";
 			target = 73AA23EDB004D1AB2BF9F13C23D04158 /* BrandButton-BrandButton */;
-			targetProxy = F9D125A40820B37C8B9B792FDF65B32B /* PBXContainerItemProxy */;
+			targetProxy = 694A4BF7F6578183AF0FA8DE7B724C8F /* PBXContainerItemProxy */;
+		};
+		55B05CDFF79A42D936DFA7EF83F194DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrandButton;
+			target = 22CAFF5E569EBD2C9EAF6581E6E0F32C /* BrandButton */;
+			targetProxy = 672EC4C4680556C7A5698BA2A8B3AEBF /* PBXContainerItemProxy */;
+		};
+		C0961971FBB8F69AF1EE75613A7D154D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BrandButton_Example";
+			target = 4D7BA0C4082671DA15FF6261C7B241BB /* Pods-BrandButton_Example */;
+			targetProxy = 02AEC9010A638904E2AFF0BA01A3CC91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -572,9 +568,26 @@
 			};
 			name = Debug;
 		};
+		1D11B9F53344735671B5C374EA479458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489578F1E8B53A75C58C3146CD970DB4 /* BrandButton.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BrandButton";
+				IBSC_MODULE = BrandButton;
+				INFOPLIST_FILE = "Target Support Files/BrandButton/ResourceBundle-BrandButton-BrandButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BrandButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		273DAE5CCDDBABA8C59C20B7083AEEFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC2BFD3E67DD7DF176161F29006086BA /* BrandButton.release.xcconfig */;
+			baseConfigurationReference = 30AF9982FFB7F371D52644D981F2D811 /* BrandButton.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -674,9 +687,9 @@
 			};
 			name = Debug;
 		};
-		2DF4F338F2990AF97455A8E2FB51C50F /* Debug */ = {
+		3A075013923D3390B0407A373D595FEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223F32E23924D2048B58B75FDE41B144 /* BrandButton.debug.xcconfig */;
+			baseConfigurationReference = 30AF9982FFB7F371D52644D981F2D811 /* BrandButton.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BrandButton";
@@ -689,7 +702,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -791,23 +804,6 @@
 			};
 			name = Release;
 		};
-		94048B29FD512D642EA4CB054CA5E2BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC2BFD3E67DD7DF176161F29006086BA /* BrandButton.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BrandButton";
-				IBSC_MODULE = BrandButton;
-				INFOPLIST_FILE = "Target Support Files/BrandButton/ResourceBundle-BrandButton-BrandButton-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = BrandButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		9CBA1C93FE9F17C76EF37F05B78D525E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F672D14BE7FD0E23D1A08CEB931BF065 /* Pods-BrandButton_Tests.release.xcconfig */;
@@ -848,7 +844,7 @@
 		};
 		9FD66640C9355135408AFD559C5F5139 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223F32E23924D2048B58B75FDE41B144 /* BrandButton.debug.xcconfig */;
+			baseConfigurationReference = 489578F1E8B53A75C58C3146CD970DB4 /* BrandButton.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -957,11 +953,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D034C05C866D3DA8C3434B265F08EB50 /* Build configuration list for PBXNativeTarget "BrandButton-BrandButton" */ = {
+		AD82ABEB7E03C03F56DB33D58418030D /* Build configuration list for PBXNativeTarget "BrandButton-BrandButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DF4F338F2990AF97455A8E2FB51C50F /* Debug */,
-				94048B29FD512D642EA4CB054CA5E2BB /* Release */,
+				1D11B9F53344735671B5C374EA479458 /* Debug */,
+				3A075013923D3390B0407A373D595FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
