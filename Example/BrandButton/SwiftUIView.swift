@@ -17,11 +17,10 @@ struct SwiftUIView: View {
             Text("Hello, From Example File!")
             BrandButtonView(
                 title: "Title",
-                buttonType: .primary,
-                buttonColor: .green,
-                buttonIconStyle: .leading,
+                type: .primary,
+                colorStyle: .green,
+                iconStyle: .leading,
                 font: UIFont.systemFont(ofSize: 22),
-                iconPosition: .trailing,
                 iconImage: UIImage(systemName: "person.circle"),
                 isEnabled: false
             ) .frame(width: 180, height: 45)

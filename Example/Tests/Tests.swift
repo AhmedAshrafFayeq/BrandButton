@@ -3,26 +3,46 @@ import BrandButton
 
 class Tests: XCTestCase {
     
+    var customBrandButton: CustomBrandButton!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        customBrandButton = CustomBrandButton()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        customBrandButton = nil
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testInitialization() {
+        XCTAssertNotNil(customBrandButton)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
+    func testTypeSetting() {
+        customBrandButton.type = .primary
+        XCTAssertEqual(customBrandButton.type, .primary)
+        customBrandButton.type = .secondary
+        XCTAssertEqual(customBrandButton.type, .secondary)
+    }
+    
+    func testColorStyleSetting() {
+        customBrandButton.colorStyle = .green
+        XCTAssertEqual(customBrandButton.colorStyle, .green)
+        customBrandButton.colorStyle = .blue
+        XCTAssertEqual(customBrandButton.colorStyle, .blue)
+    }
+    
+    func testFontSetting() {
+        let font = UIFont.systemFont(ofSize: 16)
+        customBrandButton.font = font
+        XCTAssertEqual(customBrandButton.font, font)
+    }
+    
+    func testTitleSetting() {
+        let title = "Test Title"
+        customBrandButton.title = title
+        XCTAssertEqual(customBrandButton.title, title)
     }
     
 }
