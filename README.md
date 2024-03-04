@@ -81,9 +81,13 @@ To use BrandButton in your project, follow these steps:
   
 2. Ceate an instance of CustomBrandButton and customize its properties as needed:
     ```
-    let customButton = CustomBrandButton()
-    customButton.configure(title: "Secondary", type: .secondary, color: .green)
-    customButton.leadingIcon = UIImage(named: "checkmark_icon")
+    let brandButton = CustomBrandButton()
+    brandButton.font = UIFont(name: "Helvetica-Regular", size: 15)
+    brandButton.highlitedFont = UIFont(name: "Helvetica-Bold", size: 18)
+    brandButton.leadingIcon = UIImage(named: "swift")
+    brandButton.highlitedLeadingIcon = UIImage(named: "swift-2")
+    secondaryBlueButton.isEnabled = false
+    brandButton.addTarget(self, action: #selector(didTapBrandButton), for: .touchUpInside)
     ```
 
 3. Add the button to your view hierarchy:
@@ -101,10 +105,10 @@ To use BrandButton in your project, follow these steps:
       leadingIcon: The image to be displayed before the button's title.
       trailingIcon: The image to be displayed after the button's title.
       font: The font used for the button's title.
+      highlitedFont: The font used for the button's title when button's highlited.
+      highlitedLeadingIcon: The image to be displayed before the button's title when button's highlited.
+      highlitedTrailingIcon: The image to be displayed after the button's title when button's highlited.
       
-    Methods:
-      configure(title:type:color:): Configures the button with a specific title, type and color.
-      configureIconStyle(): Configures the button's icon style (none, leading, or trailing).
       
 - SwiftUI:
   1. Import the module wherever you need to use the custom button:
@@ -112,21 +116,20 @@ To use BrandButton in your project, follow these steps:
    ```swift
    import BrandButton
    ```
-   2. Ceate an instance of CustomBrandButtonRepresentable and customize its properties as needed:
+   2. Ceate an instance of BrandButtonView and customize its properties as needed:
 
     ```
-    CustomBrandButtonRepresentable(
+    BrandButtonView(
                 title: "Title",
-                buttonType: .primary,
-                buttonColor: .green,
-                buttonIconStyle: .leading,
-                font: UIFont.systemFont(ofSize: 22),
-                iconPosition: .trailing,
-                iconImage: UIImage(systemName: "person.circle"),
-                isEnabled: false,
-                action: {
-                    print("Button tapped")
-                }
+                type: .primary,
+                colorStyle: .green,
+                iconStyle: .leading,
+                font: UIFont.systemFont(ofSize: 18),
+                iconImage: UIImage(systemName: "heart.fill"),
+                isEnabled: true,
+                highlitedFont: UIFont.systemFont(ofSize: 22),
+                highlitedIcon: UIImage(systemName: "star.fill"
+    )
     ```
   
 ## Example
